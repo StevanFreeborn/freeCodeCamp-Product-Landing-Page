@@ -230,7 +230,6 @@ nav a:hover {
 /*Pricing*/
 .product {
     width: fit-content;
-    margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     padding: 20px 80px;

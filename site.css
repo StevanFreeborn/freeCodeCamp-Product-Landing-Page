@@ -27,6 +27,10 @@ body{
     margin: 0 auto;
 }
 
+.hide {
+    display: none;
+}
+
 /*Header*/
 #header {
     width: 100%;
@@ -117,4 +121,54 @@ nav a {
 
 nav a:hover {
     border-bottom: 1px solid black;
+}
+
+/*Headline*/
+
+#headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 100px;
+    padding: 0 40px;
+}
+
+@media (max-width: 700px) {
+    #headline {
+      margin-top: 150px;
+    }
+}
+
+#headline > h1 {
+    word-wrap: break-word;
+    margin: 20px 0;
+}
+
+#headline input[type='email'] {
+    max-width: 300px;
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#headline input[type='submit'] {
+    max-width: 150px;
+    width: 50%;
+    border-radius: 5px;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    background: green;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submit-message {
+    color: green;
+    margin: 20px 0px;
 }

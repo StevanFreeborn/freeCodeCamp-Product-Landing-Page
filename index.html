@@ -15,6 +15,13 @@
     <!--Site Styling-->
     <link rel="stylesheet" href="site.css">
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("PeDdwkjYhwbF2-lWm");
+        })();
+    </script>
+
 </head>
 <body>
 
@@ -40,6 +47,19 @@
         </header>
     
         <main>
+            <!--Headline-->
+            <section id="headline">
+                <h1>
+                    Want to learn about couches that don't breakdown?
+                </h1>
+                <div class="form-container">
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+                        <input id="submit" type="submit" value="Tell Me More!" class="btn">
+                    </form>
+                    <h5 id="submit-message" class="hide">Awesome! We can't wait to tell you all about it. Check your inbox</h5>
+                </div>
+            </section>
     
             <!--Features-->
             <section id="features">
@@ -63,6 +83,8 @@
     
         </footer>
     </div>
+
+    <script src="js/index.js"></script>
     
 </body>
 </html>

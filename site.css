@@ -27,6 +27,10 @@ body{
     margin: 0 auto;
 }
 
+.grid {
+    display: flex;
+}
+
 .hide {
     display: none;
 }
@@ -171,4 +175,47 @@ nav a:hover {
 #submit-message {
     color: green;
     margin: 20px 0px;
+}
+
+/*features*/
+
+#features{
+    margin: 50px 0px;
+}
+
+#features .grid {
+    flex-direction: column;
+}
+
+#features .feature {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    #features .feature {
+      justify-content: center;
+      text-align: center;
+    }
+}
+
+#features .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 125px;
+    margin: 0px 20px;
+}
+
+#features .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    margin: 0px 20px;
 }

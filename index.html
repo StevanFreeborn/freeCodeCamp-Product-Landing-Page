@@ -5,37 +5,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+    <!--Site Styling-->
+    <link rel="stylesheet" href="site.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("PeDdwkjYhwbF2-lWm");
+        })();
+    </script>
+
 </head>
 <body>
 
-    <!--Header-->
-    <header>
-
-    </header>
-
-    <main>
-
-        <!--Features-->
-        <section>
-
-        </section>
-
-        <!--Demo-->
-        <section>
-
-        </section>
-
-        <!--Pricing-->
-        <section>
-
-        </section>
-
-    </main>
-
-    <!--Footer-->
-    <footer>
-
-    </footer>
-
+    <div id="wrapper">
+        <!--Header-->
+        <header id="header">
+            <div class="logo">
+                <img id="header-img" src="images/better-seating-logo.svg" alt="logo">
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li>
+                        <a href="#features" class="nav-link">Features</a>
+                    </li>
+                    <li>
+                        <a href="#demo" class="nav-link">Demo</a>
+                    </li>
+                    <li>
+                        <a href="#pricing" class="nav-link">Pricing</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <!--Headline-->
+            <section id="headline">
+                <h1>
+                    Want to learn about couches that don't breakdown?
+                </h1>
+                <div class="form-container">
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+                        <input id="submit" type="submit" value="Tell Me More!" class="btn">
+                    </form>
+                    <h5 id="submit-message" class="hide">Awesome! We can't wait to tell you all about it. Check your inbox</h5>
+                </div>
+            </section>
+    
+            <!--Features-->
+            <section id="features">
+                <div class="container">
+                    <div class="grid">
+                        <div class="feature">
+                            <div class="icon">
+                                <i class="fa-solid fa-screwdriver-wrench fa-5x"></i>
+                            </div>
+                            <div class="description">
+                                <h2>Robust Construction</h2>
+                                <p>We take pride in building our couches to last.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="icon">
+                                <i class="fa-solid fa-money-bill-1-wave fa-5x"></i>
+                            </div>
+                            <div class="description">
+                                <h2>Affordable</h2>
+                                <p>A couch that won't break your back or bank account.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="icon">
+                                <i class="fa-solid fas fa-shipping-fast fa-5x"></i>
+                            </div>
+                            <div class="description">
+                                <h2>Free & Fast Shipping</h2>
+                                <p>Get the couch you deserve without any hassle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+    
+            <!--Demo-->
+            <section id="demo">
+                <div class="container">
+                    <iframe
+                    id="video"
+                    height="400px"
+                    width="90%"
+                    src="https://www.youtube.com/embed/Xv9ZOrI9HCQ" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+    
+            <!--Pricing-->
+            <section id="pricing">
+                <div class="container">
+                    <div class="product">
+                        <div class="product-card">
+                            <div class="product-name">Best Damn Couch Ever</div>
+                            <h2>$499</h2>
+                            <ol>
+                                <li>Durability</li>
+                                <li>Comfort</li>
+                                <li>Relaxation</li>
+                            </ol>
+                            <button class="btn-buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <!--Footer-->
+        <footer class="footer">
+            <div class="container">
+                <h3>Code by Stevan</h3>
+                <p>Copyright &copy; 2021</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="js/index.js"></script>
+    
 </body>
 </html>

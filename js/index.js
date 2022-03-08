@@ -1,8 +1,5 @@
 window.onload = function() {
     document.getElementById('email').focus();
-};
-
-window.onload = function() {
     document.getElementById('form').addEventListener('submit', function(event) {
         event.preventDefault();
         emailjs.sendForm('gmail-service', 'better-seating-template', this)
